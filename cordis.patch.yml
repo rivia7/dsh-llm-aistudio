@@ -1,0 +1,7 @@
+# Bundle layer: mount the AI Studio (Gemini API) provider beside the existing
+# providers. Configure it from the profile's own cordis.patch.yml with an entry
+# targeting `id: llm-aistudio` (see README.md).
+- insert:
+    - id: llm-aistudio
+      name: dsh-llm-aistudio
+      inject: [llm]
